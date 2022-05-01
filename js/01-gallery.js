@@ -41,25 +41,6 @@ function onGalleryContainerClick(event) {
         <img src="${event.target.dataset.source}" width="800" height="600">
          `);
     instance.show();
-    // console.log(event.target.dataset.source);
-    // document.addEventListener('keydown', onModalKeydown);
+    console.log(event.target.dataset.source);
   }
 }
-
-//Додай закриття модального вікна після натискання клавіші Escape. Зроби так, щоб прослуховування клавіатури було тільки доти, доки відкрите модальне вікно. Бібліотекаи basicLightbox містить метод для програмного закриття модального вікна.
-
-// document.addEventListener('keydown', onModalKeydown);
-
-// function onModalKeydown(event) {
-
-//     if(event.code !== "Escape") {
-//         return;
-//     } else {
-
-//          console.log("code: ", event.code);
-// const instance = basicLightbox.create(`
-       
-//      instance.close();
-//     }
-
-// };
