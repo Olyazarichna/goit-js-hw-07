@@ -40,6 +40,7 @@ function onGalleryContainerClick(event) {
     const instance = basicLightbox.create(`
         <img src="${event.target.dataset.source}" width="800" height="600">
          `);
+    //  console.log(event.target.dataset.source);
     instance.show(() => {
       galleryContainer.addEventListener('keydown', onEscapeClick);
     });
@@ -48,10 +49,10 @@ function onGalleryContainerClick(event) {
       if (event.code !== 'Escape') {
         return;
       } else {
-        // console.log('close');
+        console.log('close');
         instance.close();
       }
     }
-    // console.log(event.target.dataset.source);
+    console.log(event.target.dataset.source);
   }
 }
